@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aviation-themed Professional Portfolio Design System
+All colors MUST be HSL for proper theming.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors - Aviation Theme */
+    --background: 0 0% 100%;
+    --foreground: 220 84% 4.9%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 220 84% 4.9%;
+    --card-hover: 214 100% 97%;
+
+    /* Popover System */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 84% 4.9%;
+
+    /* Aviation Blue Primary Palette */
+    --primary: 214 88% 20%;        /* Deep Aviation Blue */
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 214 88% 25%;
+    --primary-light: 214 100% 85%;
+
+    /* Sky Secondary Palette */
+    --secondary: 200 100% 95%;     /* Light Sky Blue */
+    --secondary-foreground: 214 88% 20%;
+    --secondary-hover: 200 100% 90%;
+
+    /* Professional Muted Tones */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 25% 40%;
+
+    /* Accent - Gold Highlights */
+    --accent: 45 100% 70%;         /* Aviation Gold */
+    --accent-foreground: 220 84% 4.9%;
+    --accent-hover: 45 100% 65%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    /* Interface Elements */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 88% 20%;
+
+    /* Gradients */
+    --gradient-aviation: linear-gradient(135deg, hsl(214 88% 20%), hsl(200 100% 30%));
+    --gradient-sky: linear-gradient(180deg, hsl(200 100% 85%), hsl(214 100% 90%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 88% 15% / 0.9), hsl(220 84% 4.9% / 0.7));
+
+    /* Shadows */
+    --shadow-aviation: 0 10px 40px -10px hsl(214 88% 20% / 0.3);
+    --shadow-card: 0 4px 12px -2px hsl(214 32% 91% / 0.8);
+    --shadow-glow: 0 0 30px hsl(45 100% 70% / 0.4);
+
+    /* Animation Timing */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme colors - Made darker */
+    --background: 219 22% 4%;
+    --foreground: 210 8% 95%;
+    
+    --card: 219 20% 8%;
+    --card-foreground: 210 8% 95%;
+    --card-hover: 219 20% 12%;
+
+    --popover: 219 20% 8%;
+    --popover-foreground: 210 8% 95%;
+
+    --primary: 220 91% 55%;
+    --primary-foreground: 220 15% 8%;
+    --primary-hover: 220 91% 50%;
+    --primary-light: 220 91% 70%;
+
+    --secondary: 219 20% 12%;
+    --secondary-foreground: 210 8% 95%;
+    --secondary-hover: 219 20% 15%;
+
+    --muted: 219 20% 12%;
+    --muted-foreground: 210 8% 55%;
+
+    --accent: 14 90% 55%;
+    --accent-foreground: 14 15% 8%;
+    --accent-hover: 14 90% 50%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 210 8% 95%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 210 8% 95%;
+
+    --border: 219 20% 15%;
+    --input: 219 20% 12%;
+    --ring: 220 91% 55%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply dark;
+    scroll-behavior: smooth;
+  }
+}
