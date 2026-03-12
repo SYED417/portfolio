@@ -1,53 +1,56 @@
-# Welcome to your Lovable project
+# Syed Sulaiman — Developer Portfolio
 
-## Project info
+A personal portfolio website showcasing projects, skills, and experience.
 
-**URL**: https://lovable.dev/projects/340d8483-5512-458a-a6b0-17683e2e2761
+## Tech Stack
 
-## How can I edit this code?
+- **React 18** + **TypeScript**
+- **Vite** — fast dev server and build tool
+- **Tailwind CSS** + **shadcn/ui** — styling and components
+- **Supabase** — authentication (email/password + Google OAuth) and file storage
+- **React Router v6** — client-side routing
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- Responsive design with dark navy and gold theme
+- Google OAuth login
+- Protected resume viewer (authenticated users only)
+- Projects showcase
+- Contact section
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/340d8483-5512-458a-a6b0-17683e2e2761) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Local Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone the repository
+git clone https://github.com/SYED417/portfolio.git
+cd portfolio
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Create a .env file in the project root
+cp .env.example .env
+# Then fill in your Supabase credentials
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the dev server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app runs on `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Environment Variables
 
-**Use GitHub Codespaces**
+Create a `.env` file with:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+```
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_GOOGLE_CLIENT_ID=your_google_oauth_client_id
+```
+
+## Deployment
+
+Deployed on **Vercel**. Add the environment variables above in Vercel Dashboard → Settings → Environment Variables before deploying.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
