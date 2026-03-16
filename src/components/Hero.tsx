@@ -35,9 +35,12 @@ const Hero = () => {
                 B.Tech CSE Undergrad &bull; Cloud &amp; DevOps Enthusiast
               </p>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl">
-                Engineering student at REVA University, building scalable cloud
-                infrastructure and deploying real-world systems. Aviation geek
-                who built a Boeing 737 control yoke from scratch.
+                Cloud and infrastructure enthusiast with hands-on experience in AWS, 
+                Linux environments, and backend deployment.
+                 Skilled in building and deploying cloud-based applications using modern development and system administration tools.
+                  Seeking a Cloud/DevOps internship to contribute to scalable infrastructure,
+                   automation, and reliable cloud systems.
+
               </p>
             </div>
 
@@ -82,7 +85,7 @@ const Hero = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com/in/syed-sulaiman-usman"
+                href="https://www.linkedin.com/in/syed-sulaiman-usman-bba233291/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-accent transition-colors duration-300 hover:scale-110 transform"

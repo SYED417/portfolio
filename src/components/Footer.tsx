@@ -68,7 +68,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/syed-sulaiman-usman"
+                href="https://www.linkedin.com/in/syed-sulaiman-usman-bba233291/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary-foreground/10 p-3 rounded-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-110"
@@ -82,22 +82,6 @@ const Footer = () => {
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
-              </a>
-              <a
-                href="tel:+918073272474"
-                className="bg-primary-foreground/10 p-3 rounded-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-110"
-                aria-label="Phone"
-              >
-                <Phone className="h-5 w-5" />
-              </a>
-              <a
-                href="https://sulaimanpilot.wuaze.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-primary-foreground/10 p-3 rounded-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-110"
-                aria-label="Website"
-              >
-                <Globe className="h-5 w-5" />
               </a>
             </div>
             <p className="text-primary-foreground/80 text-sm">

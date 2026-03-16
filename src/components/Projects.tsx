@@ -58,7 +58,7 @@ const Projects = () => {
       featured: false,
       github: "https://github.com/SYED417",
       image:
-        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop",
+      "../public/assets/maps.png"
     },
     {
       title: "Personal Cloud Server",
@@ -80,7 +80,7 @@ const Projects = () => {
       featured: false,
       github: "https://github.com/SYED417",
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
+      "../public/assets/portfolio.png"
     },
     {
       title: "Custom Aircraft Control Yoke",
@@ -91,7 +91,7 @@ const Projects = () => {
       featured: false,
       github: "https://github.com/SYED417",
       image:
-        "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=400&h=250&fit=crop",
+      "../public/assets/yoke.jpeg"
     },
   ];
 

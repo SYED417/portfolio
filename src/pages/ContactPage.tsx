@@ -1,5 +1,5 @@
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const ContactPage = () => {
   return (

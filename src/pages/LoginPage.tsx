@@ -188,7 +188,7 @@ const LoginPage = () => {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="sulaimansyed417@gmail.com"
+                        placeholder="Enter Your Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className="pl-10 bg-background border-border text-foreground"

@@ -1,5 +1,5 @@
-import Footer from '@/components/Footer';
-import Resume from '@/components/Resume';
+import Footer from "@/components/Footer";
+import Resume from "@/components/Resume";
 
 const ResumePage = () => {
   return (

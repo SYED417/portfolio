@@ -53,7 +53,9 @@ const VerifyOtpPage = () => {
     }
 
     setLoading(true);
-    const { error: otpError } = await supabase.auth.signInWithOtp({ phone: phone.replace(/\s/g, "") });
+    const { error: otpError } = await supabase.auth.signInWithOtp({
+      phone: phone.replace(/\s/g, ""),
+    });
     setLoading(false);
 
     if (otpError) {
@@ -114,7 +116,9 @@ const VerifyOtpPage = () => {
     setError("");
     setOtp(["", "", "", "", "", ""]);
     setLoading(true);
-    const { error: resendError } = await supabase.auth.signInWithOtp({ phone: phone.replace(/\s/g, "") });
+    const { error: resendError } = await supabase.auth.signInWithOtp({
+      phone: phone.replace(/\s/g, ""),
+    });
     setLoading(false);
 
     if (resendError) {

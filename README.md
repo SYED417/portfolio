@@ -51,6 +51,7 @@ VITE_GOOGLE_CLIENT_ID=your_google_oauth_client_id
 ## Deployment
 
 Deployed on **Vercel**. Add the environment variables above in Vercel Dashboard → Settings → Environment Variables before deploying.
+
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
