@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroImage from "@/assets/boeing-777-hero.jpg";
 import portraitImage from "@/assets/professional-portrait.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section
       id="home"
@@ -49,24 +51,16 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gradient-aviation hover:shadow-glow transition-all duration-300 text-lg px-8 py-4"
-                onClick={() =>
-                  document
-                    .getElementById("projects")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => navigate("/projects")}
               >
                 View Projects
                 <ArrowDown className="ml-2 h-5 w-5 animate-bounce" />
               </Button>
               <Button
                 size="lg"
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-4"
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                variant="ghost"
+                className="text-white hover:text-white hover:bg-transparent text-lg px-8 py-4"
+                onClick={() => navigate("/contact")}
               >
                 Contact Me
                 <Mail className="ml-2 h-5 w-5" />
