@@ -1,46 +1,80 @@
 # Syed Sulaiman — Developer Portfolio
 
-A personal portfolio website showcasing projects, skills, and experience.
+A modern developer portfolio built to showcase my projects, technical skills, and experience in web development. The website highlights my work, technologies I use, and provides a way to connect professionally.
+
+---
+
+## Live Demo
+
+🌐 https://syedsulaiman.vercel.app
+
+---
 
 ## Tech Stack
 
-- **React 18** + **TypeScript**
-- **Vite** — fast dev server and build tool
-- **Tailwind CSS** + **shadcn/ui** — styling and components
-- **Supabase** — authentication (email/password + Google OAuth) and file storage
-- **React Router v6** — client-side routing
+**Frontend**
 
-## Features
+* React 18
+* TypeScript
+* Vite
 
-- Responsive design with dark navy and gold theme
-- Google OAuth login
-- Protected resume viewer (authenticated users only)
-- Projects showcase
-- Contact section
+**Styling**
 
-## Local Development
+* Tailwind CSS
+* shadcn/ui
 
-```sh
-# 1. Clone the repository
-git clone https://github.com/SYED417/portfolio.git
-cd portfolio
+**Authentication & Backend Services**
 
-# 2. Install dependencies
-npm install
+* Supabase Authentication (Email/Password + Google OAuth)
+* Supabase Storage
 
-# 3. Create a .env file in the project root
-cp .env.example .env
-# Then fill in your Supabase credentials
+**Routing**
 
-# 4. Start the dev server
-npm run dev
+* React Router v6
+
+---
+
+## Key Features
+
+* Modern responsive design
+* Dark navy and gold theme
+* Secure authentication with Google OAuth
+* Protected resume viewer (accessible only to authenticated users)
+* Project showcase section
+* Contact section for professional networking
+
+---
+
+## Project Structure
+
+```
+portfolio/
+│
+├── src/
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   ├── lib
+│   └── styles
+│
+├── public
+├── index.html
+└── package.json
 ```
 
-The app runs on `http://localhost:5173`.
+---
 
-## Environment Variables
+## Getting Started (Local Development)
 
-Create a `.env` file with:
+Clone the repository and install dependencies.
+
+```bash
+git clone https://github.com/SYED417/portfolio.git
+cd portfolio
+npm install
+```
+
+Create a `.env` file in the project root and add:
 
 ```
 VITE_SUPABASE_URL=your_supabase_project_url
@@ -48,30 +82,39 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 VITE_GOOGLE_CLIENT_ID=your_google_oauth_client_id
 ```
 
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
 ## Deployment
 
-Deployed on **Vercel**. Add the environment variables above in Vercel Dashboard → Settings → Environment Variables before deploying.
+The project is deployed using **Vercel**.
 
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To deploy:
 
-## What technologies are used for this project?
+1. Push the repository to GitHub
+2. Import the project in Vercel
+3. Add the required environment variables
+4. Deploy
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Author
 
-## How can I deploy this project?
+**Syed Sulaiman**
 
-Simply open [Lovable](https://lovable.dev/projects/340d8483-5512-458a-a6b0-17683e2e2761) and click on Share -> Publish.
+Computer Science Student | Web Developer
+Interested in building scalable applications and cloud-based solutions.
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+GitHub: https://github.com/SYED417
+LinkedIn: https://linkedin.com/in/your-profile
